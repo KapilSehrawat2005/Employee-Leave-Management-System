@@ -141,24 +141,24 @@ Manager: Full control – manage all users, approve/reject leaves for all roles.
 
 ### API Endpoints Overview
 Method	Endpoint	Description	Access
-- **POST	/api/auth/register	Register as Employee	Public
-- **POST	/api/auth/login	Login	Public
-- **PUT	/api/auth/change-password	Change own password	Authenticated
-- **POST	/api/leaves	Apply for leave	Authenticated
-- **GET	/api/leaves/my	Get own leaves	Authenticated
-- **GET	/api/leaves/all	Get all leaves (optional role filter)	HR, Manager
-- **PUT	/api/leaves/:id	Update leave status	HR, Manager
-- **GET	/api/notifications	Get unread notifications	HR, Manager
-- **PUT	/api/notifications/:id/read	Mark notification as read	HR, Manager
+- POST	/api/auth/register	Register as Employee	Public
+- POST	/api/auth/login	Login	Public
+- PUT	/api/auth/change-password	Change own password	Authenticated
+- POST	/api/leaves	Apply for leave	Authenticated
+- GET	/api/leaves/my	Get own leaves	Authenticated
+- GET	/api/leaves/all	Get all leaves (optional role filter)	HR, Manager
+- PUT	/api/leaves/:id	Update leave status	HR, Manager
+- GET	/api/notifications	Get unread notifications	HR, Manager
+- PUT	/api/notifications/:id/read	Mark notification as read	HR, Manager
 POST	/api/users	Create a new user	Manager
-- **GET	/api/users	Get all users (optional role filter)	Manager
-- **DELETE	/api/users/:id	Delete a user	Manager
-- **PUT	/api/users/:id/code	Update user's employee code	Manager
-- **PUT	/api/users/:id/password	Change user's password	Manager
-- **GET	/api/employees	Get all employees	HR
-- **PUT	/api/employees/:id/code	Update employee code	HR
-- **PUT	/api/employees/:id/password	Change employee password	HR
-- **DELETE	/api/employees/:id	Delete an employee	HR
+- GET	/api/users	Get all users (optional role filter)	Manager
+- DELETE	/api/users/:id	Delete a user	Manager
+- PUT	/api/users/:id/code	Update user's employee code	Manager
+- PUT	/api/users/:id/password	Change user's password	Manager
+- GET	/api/employees	Get all employees	HR
+- PUT	/api/employees/:id/code	Update employee code	HR
+- PUT	/api/employees/:id/password	Change employee password	HR
+- DELETE	/api/employees/:id	Delete an employee	HR
 ### Environment Variables
 Variable	Description
 - **PORT	Port for the backend server
